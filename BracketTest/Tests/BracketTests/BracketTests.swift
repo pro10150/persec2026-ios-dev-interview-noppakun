@@ -1,5 +1,5 @@
 import Testing
-@testable import BracketTest
+@testable import Bracket
 
 @Suite("Bracket Test")
 struct brackets {

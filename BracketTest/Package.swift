@@ -4,29 +4,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "BracketTest",
+    name: "Bracket",
 	platforms: [
 		.macOS("15.0")
 	],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "BracketTest",
-            targets: ["BracketTest"]
+            name: "Bracket",
+            targets: ["Bracket"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "BracketTest",
+            name: "Bracket",
             swiftSettings: [
                 .enableUpcomingFeature("ApproachableConcurrency"),
             ],
         ),
         .testTarget(
-            name: "BracketTestTests",
-            dependencies: ["BracketTest"],
+            name: "BracketTests",
+            dependencies: ["Bracket"],
             swiftSettings: [
                 .enableUpcomingFeature("ApproachableConcurrency"),
             ],
