@@ -6,6 +6,15 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1129B35B30A3132C006BF9D0 /* AutoComplete in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B35A30A3132C006BF9D0 /* AutoComplete */; };
+		1129B35E30A31350006BF9D0 /* Bracket in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B35D30A31350006BF9D0 /* Bracket */; };
+		1129B36130A3135B006BF9D0 /* ModernRomanNumerals in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B36030A3135B006BF9D0 /* ModernRomanNumerals */; };
+		1129B36430A31365006BF9D0 /* PositiveIntSort in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B36330A31365006BF9D0 /* PositiveIntSort */; };
+		1129B36730A31374006BF9D0 /* StringSort in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B36630A31374006BF9D0 /* StringSort */; };
+		1129B36D30A313BF006BF9D0 /* Tribonacci in Frameworks */ = {isa = PBXBuildFile; productRef = 1129B36C30A313BF006BF9D0 /* Tribonacci */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		111B3EAE30A1D9A100C2C61E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -33,6 +42,12 @@
 		111B3EAD30A1D9A100C2C61E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				1129B36130A3135B006BF9D0 /* ModernRomanNumerals in Frameworks */,
+				1129B36430A31365006BF9D0 /* PositiveIntSort in Frameworks */,
+				1129B36D30A313BF006BF9D0 /* Tribonacci in Frameworks */,
+				1129B36730A31374006BF9D0 /* StringSort in Frameworks */,
+				1129B35B30A3132C006BF9D0 /* AutoComplete in Frameworks */,
+				1129B35E30A31350006BF9D0 /* Bracket in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -71,6 +86,14 @@
 				111B3EB230A1D9A100C2C61E /* bull-interview */,
 			);
 			name = "bull-interview";
+			packageProductDependencies = (
+				1129B35A30A3132C006BF9D0 /* AutoComplete */,
+				1129B35D30A31350006BF9D0 /* Bracket */,
+				1129B36030A3135B006BF9D0 /* ModernRomanNumerals */,
+				1129B36330A31365006BF9D0 /* PositiveIntSort */,
+				1129B36630A31374006BF9D0 /* StringSort */,
+				1129B36C30A313BF006BF9D0 /* Tribonacci */,
+			);
 			productName = "bull-interview";
 			productReference = 111B3EB030A1D9A100C2C61E /* bull-interview */;
 			productType = "com.apple.product-type.tool";
@@ -99,6 +122,14 @@
 			);
 			mainGroup = 111B3EA730A1D9A100C2C61E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1129B35930A3132C006BF9D0 /* XCLocalSwiftPackageReference "../AutoComplete" */,
+				1129B35C30A31350006BF9D0 /* XCLocalSwiftPackageReference "../Bracket" */,
+				1129B35F30A3135B006BF9D0 /* XCLocalSwiftPackageReference "../ModernRomanNumerals" */,
+				1129B36230A31365006BF9D0 /* XCLocalSwiftPackageReference "../PositiveIntSort" */,
+				1129B36530A31374006BF9D0 /* XCLocalSwiftPackageReference "../StringSort" */,
+				1129B36B30A313BF006BF9D0 /* XCLocalSwiftPackageReference "../Tribonacci" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 111B3EB130A1D9A100C2C61E /* Products */;
 			projectDirPath = "";
@@ -284,6 +315,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1129B35930A3132C006BF9D0 /* XCLocalSwiftPackageReference "../AutoComplete" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../AutoComplete;
+		};
+		1129B35C30A31350006BF9D0 /* XCLocalSwiftPackageReference "../Bracket" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Bracket;
+		};
+		1129B35F30A3135B006BF9D0 /* XCLocalSwiftPackageReference "../ModernRomanNumerals" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ModernRomanNumerals;
+		};
+		1129B36230A31365006BF9D0 /* XCLocalSwiftPackageReference "../PositiveIntSort" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../PositiveIntSort;
+		};
+		1129B36530A31374006BF9D0 /* XCLocalSwiftPackageReference "../StringSort" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../StringSort;
+		};
+		1129B36B30A313BF006BF9D0 /* XCLocalSwiftPackageReference "../Tribonacci" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Tribonacci;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1129B35A30A3132C006BF9D0 /* AutoComplete */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AutoComplete;
+		};
+		1129B35D30A31350006BF9D0 /* Bracket */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Bracket;
+		};
+		1129B36030A3135B006BF9D0 /* ModernRomanNumerals */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModernRomanNumerals;
+		};
+		1129B36330A31365006BF9D0 /* PositiveIntSort */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PositiveIntSort;
+		};
+		1129B36630A31374006BF9D0 /* StringSort */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StringSort;
+		};
+		1129B36C30A313BF006BF9D0 /* Tribonacci */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tribonacci;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 111B3EA830A1D9A100C2C61E /* Project object */;
 	validationLevel = 1;

@@ -42,4 +42,19 @@ struct brackets {
 	func isOnlyBracketsTest(raw: String, expected: Bool) async throws {
 		#expect(isOnlyBrackets(raw) == expected)
 	}
+	
+	@Test(
+		"Testing Bracket input error",
+		arguments: [
+			"สวัสดีครับ",
+			"Hell",
+			"ᐸᐸᐸᐳᐳᐳ",
+			"))DFFEE"
+		]
+	)
+	func bracketInputErrorTest(raw: String) {
+		#expect(throws: BracketError.InvalidInput) {
+			try isOnlyBrackets(raw)
+		}
+	}
 }

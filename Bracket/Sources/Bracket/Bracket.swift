@@ -1,5 +1,6 @@
-public func validateBrackets(list: String) -> Bool {
-	guard list.count % 2 == 0 && isOnlyBrackets(list) else { return false }
+public func validateBrackets(list: String) throws -> Bool {
+	guard isOnlyBrackets(list) else { throw BracketError.InvalidInput }
+	guard list.count % 2 == 0 else { return false }
 	var stacks: [Character] = []
 	let pairs: [Character: Character] = [")": "(", "]": "[", "}" : "{"]
 	for char in list {
@@ -12,4 +13,8 @@ public func validateBrackets(list: String) -> Bool {
 
 func isOnlyBrackets(_ s: String) -> Bool {
 	s.wholeMatch(of: /[()\[\]{}]+/) != nil
+}
+
+enum BracketError: Error {
+	case InvalidInput
 }
