@@ -98,3 +98,13 @@ Give me the regex for roman numerals validation.
 ```
 
 give me more cases to test the passing case?
+
+## ข้อ 5
+### 1 - ตรวจสอบ Edge Case
+```
+public func sortPositiveInt(value: Int) throws -> Int {
+	guard value >= 0 else { throw SortPositiveError.negativeValue }
+	return Int(String(String(value).sorted(by: >))) ?? 0
+}
+```
+What happened once sorted and the Int value is overflowed? How should I handle them?
