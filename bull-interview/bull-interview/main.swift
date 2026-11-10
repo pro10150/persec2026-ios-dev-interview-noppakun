@@ -13,7 +13,7 @@ import PositiveIntSort
 import StringSort
 import Tribonacci
 
-print("Hello, World!")
+print("Select any program to continue")
 
 while true {
 	print(
