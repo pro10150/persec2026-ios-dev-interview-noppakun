@@ -68,3 +68,33 @@ Think of edge cases to test these functions?
 
 ### 2 - ถามต่อยอดจากข้อ 1
 About this test("" keyword), should this function's test still guard the empty search still? There'd be a guard inside the autocomplete function, so there's little chance it'd get past that. Except for the case that this function is reused elsewhere. The function internal, so it can be used inside the package.
+
+## ข้อ 4
+### 1 - เขียน Unit Test สำหรับดัก Error
+Give me the regex for roman numerals validation. 
+- `I, X, C, M` Should only be repeated at the maximum 3 times
+- `V, L, D` would never repeat and never subtract
+- Only `IV/IX, XL/XC, CD/CM` can subtract, one small letter only(IIX would fails).
+- Order must go big to small
+
+### 2 - เขียน Unit Test สำหรับเคสที่ผ่าน
+```
+@Test(
+		"Test converting number to roman numerals",
+		arguments: [
+			(1989, "MCMLXXXIX"),
+			(2000, "MM"),
+			(68, "LXVIII"),
+			(109, "CIX"),
+			(3999, "MMMCMXCIX"),
+			(1, "I"),
+			(3, "III"),
+			(4, "IV")
+		]
+	)
+	func convertToRomanNumeralsTest(number: Int, expected: String) throws {
+		#expect(try convertToRomanNumerals(from: number) == expected)
+	}
+```
+
+give me more cases to test the passing case?
